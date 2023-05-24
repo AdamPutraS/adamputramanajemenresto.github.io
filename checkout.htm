@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts -->
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">MigleFood <i class="fas fa-hamburger"></i></a>
+            
+            <nav class="navbar">
+                <a href="home.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="orders.html">orders</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">AdamPutra</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+
+            </div>
+        </section>
+
+    </header>
+<!-- header  section ends  -->
+    
+<div class="heading">
+    <h3>checkout</h3>
+    <p><a href="home.html">home</a><span> / checkout</span></p>
+</div>
+
+<section class="checkout">
+
+    <h1 class="title">order summary</h1>
+
+    <form action="" method="post">
+
+    <div class="cart-items">
+        <h3>cart items</h3>
+        <p><span class="name">big burger 01</span><span class="price">Rp. 10.000,00</span></p>
+        <p><span class="name">strowberry cake 01</span><span class="price">Rp. 5.000,00</span></p>
+        <p><span class="name">orange juice 01</span><span class="price">Rp. 2.000,00</span></p>
+        <p class="grand-total"><span class="name">total pembelian:</span><span class="price">Rp. 50.000,00</span></p>
+        <a href="cart.html" class="btn">lihat keranjang</a>
+    </div>
+
+    <div class="user-info">
+        <h3>informasi pemesanan</h3>
+        <p><i class="fas fa-user"></i><span>adam putra</span></p>
+        <p><i class="fas fa-phone"></i><span>000888777999</span></p>
+        <p><i class="fas fa-envelope"></i><span>dedam999@gmail.com</span></p>
+        <a href="update_profile.html" class="btn">update info</a>
+        <h3>nomer meja</h3>
+        <p><i class="fas fa-table"></i><span>no.20</span></p>
+        <a href="update_address.html" class="btn">update no</a>
+        <select name="method" id="" class="box" required>
+            <option value="" disabled selected>pilih metode pembayaran --</option>
+            <option value="cash on delivery">bayar ditempat</option>
+            <option value="credit card">kredit</option>
+            <option value="paytm">paytm</option>
+            <option value="paypal">paypal</option>
+        </select>
+        <input type="submit" value="bayar sekarang" class="btn" style="width: 100%; background: var(--black); color: var(--white);">
+    </div>
+
+
+
+
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section start -->
+
+<footer class="footer">
+
+    <section class="grid">
+
+        <div class="box">
+            <img src="image/email-icon.png" alt="">
+            <h3>our email</h3>
+            <a href="mailto:damputs@gmai.com">damputs@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <img src="image/clock-icon.png" alt="">
+            <h3>opening time</h3>
+            <p>07.00am - 09.00pm</p>
+        </div>
+
+        <div class="box">
+            <img src="image/map-icon.png" alt="">
+            <h3>our address</h3>
+            <a href="#">jalan kopi hitam 007</a>
+        </div>
+
+        <div class="box">
+            <img src="image/phone-icon.png" alt="">
+            <h3>our contact</h3>
+            <a href="tel:089876543">089-876-543</a>
+        </div>
+
+    </section>
+
+    <div class="credit">dibuat oleh <span>AdamPutra </span>| RestoranMigleFood</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+
+<div class="loader">
+    <img src="image/loader.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+</body>
+</html>

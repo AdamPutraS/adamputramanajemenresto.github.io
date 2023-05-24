@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts -->
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">MigleFood <i class="fas fa-hamburger"></i></a>
+            
+            <nav class="navbar">
+                <a href="home.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="orders.html">orders</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">AdamPutra</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+
+            </div>
+        </section>
+
+    </header>
+<!-- header  section ends  -->
+    
+<!-- login section starts -->
+
+<section class="form-container">
+
+    <form action="" method="post">
+        <h3>login sekarang</h3>
+        <input type="email" name="email" required placeholder="masukan email" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+        <input type="password" name="pass" required placeholder="masukan password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+        <input type="submit" value="login" name="submit" class="btn">
+        <p>tidak punya akun?<a href="register.html">buat akun</a></p>
+    </form>
+
+</section>
+
+<!-- login section ends -->
+
+
+
+<div class="loader">
+    <img src="image/loader.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section start -->
+
+<footer class="footer">
+
+    <section class="grid">
+
+        <div class="box">
+            <img src="image/email-icon.png" alt="">
+            <h3>our email</h3>
+            <a href="mailto:damputs@gmai.com">damputs@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <img src="image/clock-icon.png" alt="">
+            <h3>opening time</h3>
+            <p>07.00am - 09.00pm</p>
+        </div>
+
+        <div class="box">
+            <img src="image/map-icon.png" alt="">
+            <h3>our address</h3>
+            <a href="#">jalan kopi hitam 007</a>
+        </div>
+
+        <div class="box">
+            <img src="image/phone-icon.png" alt="">
+            <h3>our contact</h3>
+            <a href="tel:089876543">089-876-543</a>
+        </div>
+
+    </section>
+
+    <div class="credit">dibuat oleh <span>AdamPutra </span>| RestoranMigleFood</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+</body>
+</html>
